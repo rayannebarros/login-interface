@@ -1,3 +1,4 @@
+import { Archivo } from "next/font/google";
 import type { Config } from "tailwindcss";
 
 const config: Config = {
@@ -8,10 +9,18 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+      colors: {
+        brand: "#1E9E6A",
+        dark: {
+          "10": "#1A202C",
+          "20": "#656769",
+          "30": "#E8E8E8",
+          "40": "#F7FAFC",
+          "50": "#FFFFFF",
+        },
+      },
+      fontFamily: {
+        archivo: "Archivo",
       },
     },
   },
